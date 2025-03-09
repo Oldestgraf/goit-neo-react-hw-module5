@@ -26,7 +26,7 @@ const MovieDetailsPage = () => {
 
     return (
         <main>
-            <Link to={backLinkHref}>
+            <Link to={backLinkHref} state={{ from: backLinkHref }}>
                 <HiArrowLeft size="12" /> Go back
             </Link>
 
