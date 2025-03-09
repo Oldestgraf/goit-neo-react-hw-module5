@@ -10,6 +10,7 @@ const MovieDetailsPage = () => {
     const location = useLocation();
 
     const backLinkHref = location.state?.from ?? "/movies";
+    console.log(backLinkHref)
 
 
     useEffect(() => {
@@ -26,7 +27,7 @@ const MovieDetailsPage = () => {
 
     return (
         <main>
-            <Link to={backLinkHref} state={{ from: backLinkHref }}>
+            <Link to={backLinkHref}>
                 <HiArrowLeft size="12" /> Go back
             </Link>
 

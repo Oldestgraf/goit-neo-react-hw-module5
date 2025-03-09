@@ -10,7 +10,7 @@ const Navigation = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.nav}>
-                <NavLink to="/" className={buildLinkClass}>
+                <NavLink to="/" state={{ from: "/" }} className={buildLinkClass}>
                     Home
                 </NavLink>
                 <NavLink to="/movies" className={buildLinkClass}>

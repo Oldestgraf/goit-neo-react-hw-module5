@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTrendingMovies } from "../../tmdb-api";
 import MovieList from "../../components/MovieList/MovieList";
-import styles from "./HomePage.module.css"
 
 
 const HomePage = () => {
@@ -16,7 +15,7 @@ const HomePage = () => {
     return (
         <main>
             <h1>Trending today</h1>
-            <MovieList movies={movies} />
+            <MovieList movies={movies} from="/" />
         </main>
     );
 };
