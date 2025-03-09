@@ -10,8 +10,6 @@ const MovieDetailsPage = () => {
     const location = useLocation();
 
     const backLinkHref = location.state?.from ?? "/movies";
-    console.log(backLinkHref)
-
 
     useEffect(() => {
         getMovieDetails(movieId)
